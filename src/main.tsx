@@ -14,8 +14,14 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <SocietyMaps />
-  </React.StrictMode>,
-)
+// React 18 Standard Root Rendering
+const rootElement = document.getElementById('root');
+
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <SocietyMaps />
+    </React.StrictMode>
+  );
+}
