@@ -32,7 +32,7 @@ L.Icon.Default.mergeOptions({ iconUrl, iconRetinaUrl, shadowUrl });
 // ─────────────────────────────────────────────────────────────
 // Backend URL — change to your Vercel/Railway deployed URL
 // ─────────────────────────────────────────────────────────────
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'https://maps-puce.vercel.app';
 
 // ─────────────────────────────────────────────────────────────
 // Types
