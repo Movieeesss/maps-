@@ -1,8 +1,18 @@
 {
   "version": 2,
+  "framework": "vite",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/main.py" },
-    { "source": "/socket.io/(.*)", "destination": "/api/main.py" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/socket.io/(.*)",
+      "destination": "/api/main.py"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/main.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
