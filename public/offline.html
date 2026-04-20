@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offline – Merge PDF</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #f0fdf4;
+      font-family: sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    .icon { font-size: 64px; margin-bottom: 20px; }
+    h1 { color: #166534; font-size: 22px; margin-bottom: 10px; }
+    p { color: #555; font-size: 14px; line-height: 1.6; max-width: 300px; }
+    button {
+      margin-top: 24px;
+      padding: 12px 28px;
+      background: #92d050;
+      color: #333;
+      border: none;
+      border-radius: 10px;
+      font-weight: 900;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="icon">📄</div>
+  <h1>You're Offline</h1>
+  <p>No internet connection detected. Please check your network and try again.</p>
+  <button onclick="window.location.reload()">RETRY</button>
+</body>
+</html>
