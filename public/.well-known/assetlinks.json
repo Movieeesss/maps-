@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.vercel.maps_puce.twa",
+    "sha256_cert_fingerprints": ["8D:87:E9:5F:93:9E:6D:F6:CC:0B:64:18:4E:93:68:1E:02:28:21:4F:CE:27:A9:D5:C7:D7:35:B7:11:8E:26:E7"]
+  }
+}]
