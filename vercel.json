@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "package.json", "use": "@vercel/static-build" },
-    { "src": "api/main.py", "use": "@vercel/python" }
-  ],
   "rewrites": [
-    { "source": "/socket.io/(.*)", "destination": "api/main.py" },
-    { "source": "/api/(.*)", "destination": "api/main.py" },
+    { "source": "/api/(.*)", "destination": "/api/main.py" },
+    { "source": "/socket.io/(.*)", "destination": "/api/main.py" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
