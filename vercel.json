@@ -1,18 +1,12 @@
 {
   "version": 2,
-  "framework": "vite",
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build" },
+    { "src": "api/main.py", "use": "@vercel/python" }
+  ],
   "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/main.py"
-    },
-    {
-      "source": "/socket.io/(.*)",
-      "destination": "/api/main.py"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/socket.io/(.*)", "destination": "api/main.py" },
+    { "source": "/api/(.*)", "destination": "api/main.py" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
