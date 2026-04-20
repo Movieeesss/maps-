@@ -3,11 +3,11 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/socket.io/(.*)",
+      "source": "/api/(.*)",
       "destination": "/api/main.py"
     },
     {
-      "source": "/api/(.*)",
+      "source": "/socket.io/(.*)",
       "destination": "/api/main.py"
     },
     {
